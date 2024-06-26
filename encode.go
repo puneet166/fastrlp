@@ -193,7 +193,7 @@ func (v *Value) GetUint64() (uint64, error) {
 
 	return num, nil
 }
-
+//
 func (v *Value) GetBigIntNew() (*big.Int, error) {
 	if v.t != TypeBytes {
 		return nil, fmt.Errorf("expected type TypeBigBytes, got %v", v.t)
